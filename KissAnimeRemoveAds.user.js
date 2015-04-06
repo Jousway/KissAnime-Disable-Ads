@@ -3,7 +3,7 @@
 // @namespace   https://github.com/Jousway/KissAnime-Disable-Ads
 // @description Disable anoying KissAnime Ads
 // @include     http://kissanime.com/*
-// @version     1
+// @version     1.1
 // @grant       none
 // ==/UserScript==
 
@@ -16,7 +16,6 @@ for(var d = 0; d < divsToHide.length; d++) {
 for(var i = 0; i < 200; i++) {
     ifdef = document.getElementById("adsIfrme"+i);
     if (ifdef) {
-        ifdef.width="0";
-        ifdef.height="0"; 
+        ifdef.parentNode.removeChild(ifdef);
     }
 }
