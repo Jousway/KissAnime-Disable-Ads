@@ -3,6 +3,7 @@
 // @namespace   https://github.com/Jousway/KissAnime-Disable-Ads
 // @description Disable anoying KissAnime Ads
 // @include     http://kissanime.com/*
+// @include     http://kissanime.to//*
 // @include     http://kissmanga.com/*
 // @include     http://kisscartoon.me/*
 // @version     1.2
