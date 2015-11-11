@@ -3,17 +3,20 @@
 // @namespace   https://github.com/Jousway/KissAnime-Disable-Ads
 // @description Disable anoying KissAnime Ads
 // @include     http://kissanime.com/*
-// @include     http://kissanime.to//*
+// @include     http://kissanime.to/*
 // @include     http://kissmanga.com/*
 // @include     http://kisscartoon.me/*
-// @version     1.2
+// @version     1.3
 // @grant       none
 // ==/UserScript==
 
 function adrm(div) {
     var rmad = document.getElementById(div);
     if (rmad) {
-        rmad.parentNode.removeChild(rmad);
+        setTimeout(function(){
+            rmad.parentNode.removeChild(rmad);
+            rmad.parentNode.appendChild(rmad);
+        }, 2000);
     }
 }
 
@@ -26,7 +29,7 @@ function replac(clas,sor,rel) {
     }
 }
 
-replac("barTitle","\nRemove ads","KissAnime Disable Ads 1.2");
+replac("barTitle","\nRemove ads","KissAnime Disable Ads 1.3");
 replac("title","Remove Ads","Get Script");
 $("a[href='/Message/GoPremium']").attr('href', 'https://github.com/Jousway/KissAnime-Disable-Ads/raw/master/KissAnimeRemoveAds.user.js')
 
@@ -44,8 +47,3 @@ for(var i = 0; i < 50; i++) {
 adrm("divFloatLeft");
 adrm("divFloatRight");
 adrm("divAds");
-
-
-
-
-
