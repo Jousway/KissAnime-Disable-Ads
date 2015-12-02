@@ -6,7 +6,8 @@
 // @include     http://kissanime.to/*
 // @include     http://kissmanga.com/*
 // @include     http://kisscartoon.me/*
-// @version     1.3
+// @include     https://kissanime.to/*
+// @version     1.3.1
 // @grant       none
 // ==/UserScript==
 
