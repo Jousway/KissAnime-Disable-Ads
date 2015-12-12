@@ -33,7 +33,7 @@ function replac(clas,sor,rel) {
     }
 }
 
-replac("barTitle","Remove ads","KissAnime Disable Ads 1.3");
+replac("barTitle","Remove ads","KissAnime Disable Ads 1.3.2");
 replac("title","Remove Ads","Get Script");
 $("a[href='/Message/GoPremium']").attr('href', 'https://github.com/Jousway/KissAnime-Disable-Ads/raw/master/KissAnimeRemoveAds.user.js')
 
